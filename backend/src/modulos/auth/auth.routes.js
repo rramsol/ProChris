@@ -7,5 +7,6 @@ const router = Router();
 router.post('/login', authController.login);
 router.post('/logout', autenticarSinExigirCambio, authController.logout);
 router.post('/contrasena', autenticarSinExigirCambio, authController.cambiarContrasena);
+router.get('/yo', autenticarSinExigirCambio, authController.perfil);
 
 export default router;
